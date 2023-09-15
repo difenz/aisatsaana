@@ -77,6 +77,7 @@
   
   ScrollReveal().reveal('.header__items', { delay: 1000 });
   ScrollReveal().reveal('.listen_now', { delay: 1100 });
+  ScrollReveal().reveal('.image', { delay: 1100 });
   ScrollReveal().reveal('.aisatsaana', { delay: 500 });
   ScrollReveal().reveal('.bio', { delay: 500 });
 
