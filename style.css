@@ -159,6 +159,7 @@ li:hover {
     }
 
     .image img{
+      display: none;
       width: 50%;
       top: 50%;
       left: 50% !important;
@@ -175,6 +176,12 @@ li:hover {
     .listen_now img {
       width: 20% !important;
     }
+
+    .art__item img {
+      width: 30vh;
+      transition: all 0.3s ease;
+    }
+    
 
 }
 
@@ -221,4 +228,34 @@ a:hover::after {
 
 .thirdRelease {
   opacity: 1;
+}
+
+
+.art__item img {
+  width: 50vh;
+  transition: all 0.3s ease;
+}
+
+.art__item img:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+
+.arts h2 {
+  font-size: 32px;
+}
+
+.arts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  text-transform: uppercase;
+  gap: 150px;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  overflow-x: auto;
 }
