@@ -83,3 +83,5 @@
 
   ScrollReveal().reveal('.releases', { delay: 1300 });
   ScrollReveal().reveal('.arts', { delay: 1300 });
+
+  
