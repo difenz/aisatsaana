@@ -3,6 +3,8 @@ body {
     overflow: hidden;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scrollbar-width: none;
+    scrollbar-color: none;
 }
 
 spline-viewer {
@@ -216,20 +218,44 @@ a:hover::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   position: absolute;
   text-transform: uppercase;
   gap: 50px;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px;
+  overflow-x: auto;
 }
 
 .thirdRelease {
   opacity: 1;
 }
 
+a {
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 60%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  text-transform: uppercase;
+  width: 80%;
+  gap: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
 
 .art__item img {
   width: 50vh;
@@ -257,5 +283,18 @@ a:hover::after {
   left: 50%;
   width: 90%;
   transform: translate(-50%, -50%);
-  overflow-x: auto;
+  overflow-x: scroll;
+}
+
+.rotate img {
+  transform: rotate(90deg) !important;
+}
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
 }
